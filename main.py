@@ -5,7 +5,6 @@ import math
 import operator
 
 sys.set_int_max_str_digits(2000000000)
-print('hello')
 
 def pow(a, b):
     if not a and not b:
