@@ -1,0 +1,6 @@
+1) Add dark item (tip is in the file 'theme.py'
+2) Add other menus to Calculator such as:
+    a) Programming calculator
+    b) Engineering calculator
+    c) Date calculator
+3) Add some design to this app
