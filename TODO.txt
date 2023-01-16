@@ -1,5 +1,5 @@
 * Cleaning the history menu
-* Search for devisors
+* Search for divisors
 * Make changeable size of the window
 * Add dark item (tip is in the file 'theme.py')
 * Add other menus to Calculator such as:
