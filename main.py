@@ -18,7 +18,7 @@ def root(a, b):
     return pow(a, 1 / b)
 
 
-class MainWindow(w.QWidget):
+class MainWindow(w.QMainWindow):
     def __init__(self):
         super().__init__()
         self.initUI()
