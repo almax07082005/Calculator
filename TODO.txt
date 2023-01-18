@@ -1,6 +1,6 @@
 * Cleaning the history menu
 * Search for divisors
-* Make changeable size of the window
+* Make this app with QtDesigner
 * Add dark theme (tip is in the file 'theme.py')
 * Add other menus to Calculator such as:
     * Programming calculator
