@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>384</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="Buttons">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_close">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(87, 150, 212);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+}
+QPushButton:hover {
+	background-color: rgb(95, 166, 232);
+}
+QPushButton:pressed {
+	background-color: rgb(82, 142, 199);
+}</string>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_pop">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(87, 150, 212);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+}
+QPushButton:hover {
+	background-color: rgb(95, 166, 232);
+}
+QPushButton:pressed {
+	background-color: rgb(82, 142, 199);
+}</string>
+         </property>
+         <property name="text">
+          <string>Backspace</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_erase">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(87, 150, 212);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+}
+QPushButton:hover {
+	background-color: rgb(95, 166, 232);
+}
+QPushButton:pressed {
+	background-color: rgb(82, 142, 199);
+}</string>
+         </property>
+         <property name="text">
+          <string>Esc</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_root">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>ROOT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_reverse">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>REV</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_factorial">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>!</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_mod">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_div">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>/</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_pow">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>POW</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>7</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>8</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>9</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_mult">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>*</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_log">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>LOG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_dif">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_pi">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>PI</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_add">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_e">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>e</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(130, 170, 90);
+	border: none;
+	padding-top: 5px;
+	color: rgb(226, 234, 216);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:hover {
+	background-color: rgb(138, 181, 96);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-bottom: 5px solid rgb(110, 144, 76);
+}
+QPushButton:pressed {
+	background-color: rgb(120, 157, 83);
+	border-left: 1px solid rgb(110, 144, 76);
+	border-right: 1px solid rgb(110, 144, 76);
+	border-top: 5px solid rgb(110, 144, 76);
+	padding-top: -5px;
+	border-bottom: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_dot">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_sign">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(211, 12, 112);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QPushButton:hover {
+	background-color: rgb(227, 12, 123);
+}
+QPushButton:pressed {
+	background-color: rgb(197, 10, 107);
+}</string>
+         </property>
+         <property name="text">
+          <string>S</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_equal">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Cascadia Mono</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(87, 150, 212);
+	border: none;
+	padding-top: 5px;
+	color: rgb(205, 231, 255);
+	border-radius: 7px;
+}
+QPushButton:hover {
+	background-color: rgb(95, 166, 232);
+}
+QPushButton:pressed {
+	background-color: rgb(82, 142, 199);
+}</string>
+         </property>
+         <property name="text">
+          <string>=</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

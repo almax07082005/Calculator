@@ -4,8 +4,10 @@ from PyQt5.QtGui import QIcon
 from PyQt5 import uic
 import math
 import operator
+from dialog_shortcuts import Shortcuts
 
 sys.set_int_max_str_digits(2000000000)
+
 
 def pow(a, b):
     if not a and not b:
@@ -25,10 +27,6 @@ class MainWindow(w.QMainWindow):
         self.initUI()
 
     def initUI(self):
-        self.BUTTON_SIZE = 70
-        self.WINDOW_SIZE = 700
-        self.FONT_SIZE = 13
-        self.LABEL_SIZE = (self.WINDOW_SIZE, self.WINDOW_SIZE - 5 * self.BUTTON_SIZE)
         self.OPERATIONS = '+-%log_base n_root^fact()1/' + '\u00F7' + '\u00D7'
         self.DICT_OPERATIONS = {
             '+': operator.add,
@@ -71,6 +69,11 @@ class MainWindow(w.QMainWindow):
         self.button_log.clicked.connect(self.log)
         self.button_pi.clicked.connect(self.pi)
         self.button_e.clicked.connect(self.e)
+        self.button_shortcuts.clicked.connect(self.show_dialog)
+
+    def show_dialog(self):
+        dialog = Shortcuts()
+        dialog.show()
 
     def optim(self):
         if self.screen.toPlainText().find('.') == -1:
