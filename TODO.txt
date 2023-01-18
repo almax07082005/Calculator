@@ -1,6 +1,7 @@
 * Change dialog name
 * Add icon in QtDesigner
 * Fix errors with the second number when using 'log'
+* Change location of buttons
 * Move errors output
 * Cleaning the history menu
 * Add copy/paste/cut
