@@ -41,6 +41,7 @@ class MainWindow(w.QMainWindow):
 
         uic.loadUi('main.ui', self)
         self.setWindowIcon(QIcon('icon.ico'))
+        self.statusBar.showMessage('No problems')
 
         self.button_0.clicked.connect(self.take_digit)
         self.button_1.clicked.connect(self.take_digit)
@@ -67,8 +68,8 @@ class MainWindow(w.QMainWindow):
         self.button_root.clicked.connect(self.root)
         self.button_pow.clicked.connect(self.pow)
         self.button_log.clicked.connect(self.log)
-        self.button_pi.clicked.connect(self.pi)
-        self.button_e.clicked.connect(self.e)
+        self.button_pi.clicked.connect(lambda: self.screen.setText(str(math.pi)))
+        self.button_e.clicked.connect(lambda: self.screen.setText(str(math.e)))
         self.button_shortcuts.clicked.connect(self.show_dialog)
 
     def show_dialog(self):
@@ -91,18 +92,12 @@ class MainWindow(w.QMainWindow):
         self.second_screen.setText(self.screen.toPlainText() + ' ' + self.sender().text() + ' ')
         self.screen.setText('0')
 
-    def e(self):
-        self.screen.setText(str(math.e))
-
-    def pi(self):
-        self.screen.setText(str(math.pi))
-
     def log(self):
         if not all([i not in self.second_screen.toPlainText() for i in self.OPERATIONS]):
             return
         self.optim()
         if float(self.screen.toPlainText()) <= 0:
-            self.screen.setText('Invalid input')
+            self.statusBar.showMessage('Invalid input')
             return
         self.second_screen.setText(self.screen.toPlainText() + ' log_base ')
         self.screen.setText('0')
@@ -119,7 +114,7 @@ class MainWindow(w.QMainWindow):
             return
         self.optim()
         if float(self.screen.toPlainText()) <= 0:
-            self.screen.setText('Invalid input')
+            self.statusBar.showMessage('Invalid input')
             return
         self.second_screen.setText(self.screen.toPlainText() + ' n_root ')
         self.screen.setText('0')
@@ -133,11 +128,9 @@ class MainWindow(w.QMainWindow):
             self.screen.setText(str(math.factorial(int(self.screen.toPlainText()))))
             self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except (ValueError, TypeError):
-            self.screen.setText('Invalid input')
-            self.second_screen.setText('')
+            self.statusBar.showMessage('Invalid input')
         except OverflowError:
-            self.screen.setText('Overflow')
-            self.second_screen.setText('')
+            self.statusBar.showMessage('Overflow')
 
     def reverse(self):
         if not all([i not in self.second_screen.toPlainText() for i in self.OPERATIONS]):
@@ -149,11 +142,9 @@ class MainWindow(w.QMainWindow):
             self.optim()
             self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except (ValueError, ZeroDivisionError):
-            self.screen.setText('Invalid input')
-            self.second_screen.setText('')
+            self.statusBar.showMessage('Invalid input')
         except OverflowError:
-            self.screen.setText('Overflow')
-            self.second_screen.setText('')
+            self.statusBar.showMessage('Overflow')
 
     def equal(self):
         if not self.second_screen.toPlainText() or self.second_screen.toPlainText().find('=') != -1:
@@ -169,11 +160,9 @@ class MainWindow(w.QMainWindow):
             self.optim()
             self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except(ValueError, ZeroDivisionError, TypeError):
-            self.screen.setText('Invalid input')
-            self.second_screen.setText('')
+            self.statusBar.showMessage('Invalid input')
         except OverflowError:
-            self.screen.setText('Overflow')
-            self.second_screen.setText('')
+            self.statusBar.showMessage('Overflow')
 
     def pop(self):
         if self.screen.toPlainText() == '0':
@@ -183,6 +172,7 @@ class MainWindow(w.QMainWindow):
     def erase(self):
         self.screen.setText('0')
         self.second_screen.setText('')
+        self.statusBar.showMessage('No problems')
 
     def sign(self):
         if self.screen.toPlainText() == '0':

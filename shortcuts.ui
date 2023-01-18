@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>384</width>
-    <height>421</height>
+    <height>418</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.166 rgba(255, 255, 0, 255), stop:0.333 rgba(0, 255, 0, 255), stop:0.5 rgba(0, 255, 255, 255), stop:0.666 rgba(0, 0, 255, 255), stop:0.833 rgba(255, 0, 255, 255), stop:1 rgba(255, 0, 0, 255));</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -41,7 +44,7 @@
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -61,6 +64,9 @@
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -93,7 +99,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -113,6 +119,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -145,7 +154,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -165,6 +174,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -204,7 +216,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -224,6 +236,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -258,7 +273,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -278,6 +293,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -312,7 +330,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -332,6 +350,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -366,7 +387,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -386,6 +407,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -420,7 +444,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -440,6 +464,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -481,7 +508,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -501,6 +528,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -535,7 +565,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -555,6 +585,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -597,7 +630,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -617,6 +650,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -659,7 +695,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -679,6 +715,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -721,7 +760,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -741,6 +780,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -782,7 +824,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -802,6 +844,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -836,7 +881,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -856,6 +901,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -898,7 +946,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -918,6 +966,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -960,7 +1011,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -980,6 +1031,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1022,7 +1076,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1042,6 +1096,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1083,7 +1140,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1103,6 +1160,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1137,7 +1197,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1157,6 +1217,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1199,7 +1262,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1219,6 +1282,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1261,7 +1327,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1281,6 +1347,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1323,7 +1392,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1343,6 +1412,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1384,7 +1456,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1404,6 +1476,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1438,7 +1513,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1458,6 +1533,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1500,7 +1578,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1520,6 +1598,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1554,7 +1635,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1574,6 +1655,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -1608,7 +1692,7 @@ QPushButton:pressed {
          <property name="minimumSize">
           <size>
            <width>70</width>
-           <height>30</height>
+           <height>35</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -1628,6 +1712,9 @@ QPushButton:pressed {
            <family>Cascadia Mono</family>
            <pointsize>8</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
