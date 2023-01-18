@@ -1,5 +1,4 @@
 # Calculator
 
-This is simple GUI calculator based on Windows Calculator and written in Python.
-All GUI was written manually.
+This is simple GUI calculator written in Python.
 You can read more detailed information in the corresponding realease.
