@@ -1,3 +1,4 @@
+* Add icon to QtDesigner
 * Cleaning the history menu
 * Search for divisors
 * Add dark theme (tip is in the file 'theme.py')
