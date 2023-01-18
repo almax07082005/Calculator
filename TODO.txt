@@ -1,5 +1,7 @@
 * Add icon to QtDesigner
 * Cleaning the history menu
+* Add copy/paste/cut
+* Add parenthesis
 * Search for divisors
 * Add dark theme (tip is in the file 'theme.py')
 * Add other menus to Calculator such as:
