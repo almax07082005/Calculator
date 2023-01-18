@@ -1,4 +1,5 @@
-* Add icon to QtDesigner
+* Change dialog name
+* Add icon in QtDesigner
 * Cleaning the history menu
 * Add copy/paste/cut
 * Add parenthesis
