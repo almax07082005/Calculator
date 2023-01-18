@@ -2,6 +2,7 @@
 * Cleaning the history menu
 * Add copy/paste/cut
 * Add parenthesis
+* Fix history and second_screen (output)
 * Search for divisors
 * Add dark theme (tip is in the file 'theme.py')
 * Add other menus to Calculator such as:
