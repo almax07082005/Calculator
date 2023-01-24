@@ -1,11 +1,14 @@
-* Add icon in QtDesigner
-* Cleaning the history menu
+* Add size checking
 * Add copy/paste/cut
 * Add parenthesis
-* Fix history and second_screen (output)
-* Search for divisors
 * Add dark theme (tip is in the file 'theme.py')
 * Add other menus to Calculator such as:
     * Programming calculator
     * Engineering calculator
     * Date calculator
+* Add russian language
+
+** Added search for divisors
+** Added hints for shortcuts
+** Added menu bar
+** You can continue calculating with last answer
