@@ -70,7 +70,30 @@ class MainWindow(w.QMainWindow):
         self.button_log.clicked.connect(self.log)
         self.button_pi.clicked.connect(lambda: self.screen.setText(str(math.pi)))
         self.button_e.clicked.connect(lambda: self.screen.setText(str(math.e)))
-        self.button_shortcuts.clicked.connect(self.show_dialog)
+        self.button_divisors.clicked.connect(self.divisors)
+        self.shortcuts.triggered.connect(self.show_dialog)
+        self.clean_secondary_screen.triggered.connect(lambda: self.second_screen.setText(''))
+        self.clean_history_screen.triggered.connect(lambda: self.history.setText(''))
+
+    def divisors(self):
+        if not all([i not in self.second_screen.toPlainText() for i in self.OPERATIONS]):
+            return
+        self.optim()
+        if self.second_screen.toPlainText().find('.') != -1 or self.screen.toPlainText()[0] == '-' or self.screen.toPlainText() == '0':
+            self.errors.setText('Invalid input')
+            self.errors.show()
+            return
+        try:
+            div = ''
+            number = int(self.screen.toPlainText())
+            for i in range(1, number + 1):
+                if not(number % i):
+                    div += str(i) + ' '
+            self.second_screen.setText(f'div({number}) = ')
+            self.screen.setText(div)
+        except:
+            self.errors.setText('Invalid input')
+            self.errors.show()
 
     def show_dialog(self):
         dialog = Shortcuts()

@@ -11,4 +11,3 @@ class Shortcuts(w.QDialog):
     def initUI(self):
         uic.loadUi('shortcuts.ui', self)
         self.setWindowIcon(QIcon('icon.ico'))
-        self.button_close.clicked.connect(lambda: self.close())
