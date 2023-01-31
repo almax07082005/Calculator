@@ -1,4 +1,4 @@
-* Add size checking
+* Add a continuation of calculations
 * Add copy/paste/cut
 * Add parenthesis
 * Add dark theme (tip is in the file 'theme.py')
@@ -11,4 +11,6 @@
 ** Added search for divisors
 ** Added hints for shortcuts
 ** Added menu bar
-** You can continue calculating with last answer
+** You can continue calculating with last answer (manually)
+** Added new design
+** Added help menu
