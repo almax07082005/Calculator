@@ -1,10 +1,12 @@
 import sys
 import PyQt5.QtWidgets as w
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QDesktopServices
 from PyQt5 import uic
+from PyQt5.QtCore import QUrl
 import math
 import operator
 from dialog_shortcuts import Shortcuts
+from os import system
 
 sys.set_int_max_str_digits(2000000000)
 
@@ -27,7 +29,7 @@ class MainWindow(w.QMainWindow):
         self.initUI()
 
     def initUI(self):
-        self.OPERATIONS = '+-%log_base n_root^fact()1/' + '\u00F7' + '\u00D7'
+        self.OPERATIONS = '+-%log_base n_root^fact()1/div' + '\u00F7' + '\u00D7'
         self.DICT_OPERATIONS = {
             '+': operator.add,
             '-': operator.sub,
@@ -42,6 +44,7 @@ class MainWindow(w.QMainWindow):
         uic.loadUi('main.ui', self)
         self.setWindowIcon(QIcon('icon.ico'))
         self.errors.hide()
+        self.history.setText('\nThere\'s no history yet')
 
         self.button_0.clicked.connect(self.take_digit)
         self.button_1.clicked.connect(self.take_digit)
@@ -73,7 +76,9 @@ class MainWindow(w.QMainWindow):
         self.button_divisors.clicked.connect(self.divisors)
         self.shortcuts.triggered.connect(self.show_dialog)
         self.clean_secondary_screen.triggered.connect(lambda: self.second_screen.setText(''))
-        self.clean_history_screen.triggered.connect(lambda: self.history.setText(''))
+        self.clean_history_screen.triggered.connect(lambda: self.history.setText('\nThere\'s no history yet'))
+        self.question.triggered.connect(lambda: QDesktopServices.openUrl(QUrl('https://t.me/pukhlyachok')))
+        self.documentation.triggered.connect(lambda: system('start README.md'))
 
     def divisors(self):
         if not all([i not in self.second_screen.toPlainText() for i in self.OPERATIONS]):
@@ -90,7 +95,10 @@ class MainWindow(w.QMainWindow):
                 if not(number % i):
                     div += str(i) + ' '
             self.second_screen.setText(f'div({number}) = ')
-            self.screen.setText(div)
+            self.screen.setText('{' + div[:-1] + '}')
+            if self.history.toPlainText() == '\nThere\'s no history yet':
+                self.history.setText('')
+            self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except:
             self.errors.setText('Invalid input')
             self.errors.show()
@@ -151,6 +159,8 @@ class MainWindow(w.QMainWindow):
         self.second_screen.setText(f'fact({self.screen.toPlainText()}) = ')
         try:
             self.screen.setText(str(math.factorial(int(self.screen.toPlainText()))))
+            if self.history.toPlainText() == '\nThere\'s no history yet':
+                self.history.setText('')
             self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except (ValueError, TypeError):
             self.errors.setText('Invalid input')
@@ -167,6 +177,8 @@ class MainWindow(w.QMainWindow):
         try:
             self.screen.setText(str(1 / float(self.screen.toPlainText())))
             self.optim()
+            if self.history.toPlainText() == '\nThere\'s no history yet':
+                self.history.setText('')
             self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except (ValueError, ZeroDivisionError):
             self.errors.setText('Invalid input')
@@ -187,6 +199,8 @@ class MainWindow(w.QMainWindow):
             else:
                 self.screen.setText(str(self.DICT_OPERATIONS[oper](float(self.second_screen.toPlainText()[:self.second_screen.toPlainText().find(oper) - 1]), float(self.screen.toPlainText()))))
             self.optim()
+            if self.history.toPlainText() == '\nThere\'s no history yet':
+                self.history.setText('')
             self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
         except(ValueError, ZeroDivisionError, TypeError):
             self.errors.setText('Invalid input')
