@@ -1,6 +1,6 @@
 import sys
 import PyQt5.QtWidgets as w
-from PyQt5.QtGui import QIcon, QDesktopServices
+from PyQt5.QtGui import QIcon, QDesktopServices, QKeySequence
 from PyQt5 import uic
 from PyQt5.QtCore import QUrl
 import math
@@ -43,6 +43,7 @@ class MainWindow(w.QMainWindow):
 
         uic.loadUi('main.ui', self)
         self.setWindowIcon(QIcon('icon.ico'))
+
         self.errors.hide()
         self.history.setText('\nThere\'s no history yet')
 
