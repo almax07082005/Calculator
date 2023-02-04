@@ -7,6 +7,7 @@
     * Engineering calculator
     * Date calculator
 * Add russian language
+* Solving equations of any degree
 
 ** Added search for divisors
 ** Added hints for shortcuts
