@@ -215,7 +215,7 @@ p, li { white-space: pre-wrap; }
           <property name="font">
            <font>
             <family>Cascadia Mono</family>
-            <pointsize>12</pointsize>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="toolTip">
@@ -2042,6 +2042,39 @@ QPushButton:pressed {
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>screen</tabstop>
+  <tabstop>second_screen</tabstop>
+  <tabstop>history</tabstop>
+  <tabstop>button_erase</tabstop>
+  <tabstop>button_pop</tabstop>
+  <tabstop>button_equal</tabstop>
+  <tabstop>button_divisors</tabstop>
+  <tabstop>button_root</tabstop>
+  <tabstop>button_reverse</tabstop>
+  <tabstop>button_factorial</tabstop>
+  <tabstop>button_mod</tabstop>
+  <tabstop>button_div</tabstop>
+  <tabstop>button_pow</tabstop>
+  <tabstop>button_7</tabstop>
+  <tabstop>button_8</tabstop>
+  <tabstop>button_9</tabstop>
+  <tabstop>button_mult</tabstop>
+  <tabstop>button_log</tabstop>
+  <tabstop>button_4</tabstop>
+  <tabstop>button_5</tabstop>
+  <tabstop>button_6</tabstop>
+  <tabstop>button_dif</tabstop>
+  <tabstop>button_pi</tabstop>
+  <tabstop>button_1</tabstop>
+  <tabstop>button_2</tabstop>
+  <tabstop>button_3</tabstop>
+  <tabstop>button_add</tabstop>
+  <tabstop>button_e</tabstop>
+  <tabstop>button_0</tabstop>
+  <tabstop>button_dot</tabstop>
+  <tabstop>button_sign</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

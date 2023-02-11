@@ -75,7 +75,7 @@ class MainWindow(w.QMainWindow):
         self.button_pi.clicked.connect(lambda: self.screen.setText(str(math.pi)))
         self.button_e.clicked.connect(lambda: self.screen.setText(str(math.e)))
         self.button_divisors.clicked.connect(self.divisors)
-        self.shortcuts.triggered.connect(self.show_dialog)
+        self.shortcuts.triggered.connect(self.show_shortcuts)
         self.clean_secondary_screen.triggered.connect(lambda: self.second_screen.setText(''))
         self.clean_history_screen.triggered.connect(lambda: self.history.setText('\nThere\'s no history yet'))
         self.question.triggered.connect(lambda: QDesktopServices.openUrl(QUrl('https://t.me/pukhlyachok')))
@@ -94,19 +94,22 @@ class MainWindow(w.QMainWindow):
             number = int(self.screen.toPlainText())
             for i in range(1, number + 1):
                 if not(number % i):
-                    div += str(i) + ' '
+                    div += str(i) + ', '
             self.second_screen.setText(f'div({number}) = ')
-            self.screen.setText('{' + div[:-1] + '}')
-            if self.history.toPlainText() == '\nThere\'s no history yet':
-                self.history.setText('')
-            self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
+            self.screen.setText('{' + div[:-2] + '}')
+            self.set_history()
         except:
             self.errors.setText('Invalid input')
             self.errors.show()
 
-    def show_dialog(self):
+    def show_shortcuts(self):
         dialog = Shortcuts()
         dialog.exec()
+
+    def set_history(self):
+        if self.history.toPlainText() == '\nThere\'s no history yet':
+            self.history.setText('')
+        self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
 
     def optim(self):
         if self.screen.toPlainText().find('.') == -1:
@@ -160,9 +163,7 @@ class MainWindow(w.QMainWindow):
         self.second_screen.setText(f'fact({self.screen.toPlainText()}) = ')
         try:
             self.screen.setText(str(math.factorial(int(self.screen.toPlainText()))))
-            if self.history.toPlainText() == '\nThere\'s no history yet':
-                self.history.setText('')
-            self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
+            self.set_history()
         except (ValueError, TypeError):
             self.errors.setText('Invalid input')
             self.errors.show()
@@ -178,9 +179,7 @@ class MainWindow(w.QMainWindow):
         try:
             self.screen.setText(str(1 / float(self.screen.toPlainText())))
             self.optim()
-            if self.history.toPlainText() == '\nThere\'s no history yet':
-                self.history.setText('')
-            self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
+            self.set_history()
         except (ValueError, ZeroDivisionError):
             self.errors.setText('Invalid input')
             self.errors.show()
@@ -200,9 +199,7 @@ class MainWindow(w.QMainWindow):
             else:
                 self.screen.setText(str(self.DICT_OPERATIONS[oper](float(self.second_screen.toPlainText()[:self.second_screen.toPlainText().find(oper) - 1]), float(self.screen.toPlainText()))))
             self.optim()
-            if self.history.toPlainText() == '\nThere\'s no history yet':
-                self.history.setText('')
-            self.history.setText(self.history.toPlainText() + ('\n* ' if self.history.toPlainText() else '* ') + self.second_screen.toPlainText() + self.screen.toPlainText())
+            self.set_history()
         except(ValueError, ZeroDivisionError, TypeError):
             self.errors.setText('Invalid input')
             self.errors.show()

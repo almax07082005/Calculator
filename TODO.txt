@@ -7,11 +7,3 @@
     * Engineering calculator
     * Date calculator
 * Add russian language
-* Solving equations of any degree
-
-** Added search for divisors
-** Added hints for shortcuts
-** Added menu bar
-** You can continue calculating with last answer (manually)
-** Added new design
-** Added help menu
