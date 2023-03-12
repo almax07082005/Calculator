@@ -1,6 +1,6 @@
 # Calculator
 
-This is a simple calculator written in Python.
+This is a cool calculator written in Python.
 You can read more detailed information in the corresponding release.
 
 ## Documentation
